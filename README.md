@@ -28,6 +28,7 @@ Youtube video downloader API
 
 - Download in mp4 1080p format!
 - No need to go on those sketchy sites, this is instant!
+- Downloaded file is youtube title!
 
 ## Usage
 
