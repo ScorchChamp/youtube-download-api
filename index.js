@@ -18,13 +18,21 @@ app.get('/:id/:type', (req, res) => {
         return res.send('Invalid format, allowed: ' + allowed_types.join(', '));
     }
     console.log(`Downloading ${id}.${req.params.type}...`);
-    res.header('Content-Disposition', `attachment; filename=${id}.${req.params.type}`);
-    ytdl(url, {
-        format: req.params.type,
-        filter: 'audioandvideo',
-        quality: 'highestvideo',
-        format: 'hd1080'
-    }).pipe(res);
+
+    // get video name
+    ytdl.getInfo(url).then(info => {
+        const title = info.videoDetails.title;
+        res.header('Content-Disposition', `attachment; filename=${title}.${req.params.type}`);
+        ytdl(url, {
+            format: req.params.type,
+            filter: 'audioandvideo',
+            quality: 'highestvideo',
+            format: 'hd1080'
+        }).pipe(res);
+    });
+
+
+
 });
 
 app.listen(port, () => {
