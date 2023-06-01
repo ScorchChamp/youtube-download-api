@@ -20,7 +20,7 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/ScorchChamp/youtube-download-api?style=for-the-badge)
 ![GitHub Repo Stars](https://img.shields.io/github/stars/ScorchChamp/youtube-download-api?style=for-the-badge)
 
-Test download over at: [https://youtubedownloadapi.scorchchamp.com/WIRK_pGdIdA/mp4](https://youtubedownloadapi.scorchchamp.com/WIRK_pGdIdA/mp4)
+Test download over at: [https://youtubedownloadapi.scorchchamp.com/WIRK_pGdIdA/mp4](https://youtubedownloadapi.scorchchamp.com/dQw4w9WgXcQ/mp4)
 
 Youtube video downloader API
 
